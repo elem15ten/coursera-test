@@ -1,0 +1,33 @@
+a {
+	font-family: arial;
+	font-size: 18pt;
+	border: 2px solid #222222;
+	background: skyblue;
+	margin-left: 10px;
+	padding: 3px 5px;
+	text-decoration: none;
+	box-shadow: red 5px 5px 0;
+	transition: all 1s ease 0s;
+	line-height: 200%;
+}
+div {
+	transition: all 1s ease 0s;
+	position: relative;
+	float: left;
+}
+div a:hover  {
+	
+	background-color: yellow; 
+	box-shadow: red 0px 0px 0;
+	}
+div:hover  {
+	transform: rotateX(45deg);
+	transform: translate(5px, 5px);
+	
+}
+h1 {
+	text-align: center;
+}
+section {
+	display: inline-block;
+}
