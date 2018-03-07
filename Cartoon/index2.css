@@ -1,0 +1,49 @@
+.box_front {
+    position: relative;
+    
+    overflow: hidden;
+    
+    width: 500px;
+    height: 380px;
+    
+    background: skyblue;
+    box-shadow: 0 -400px 300px -300px steelblue inset;
+}
+  
+.cloud {
+    position: absolute;
+    left: 100px;
+    top: 100px;
+    
+    width: 200px;
+    height: 60px;
+    
+    opacity: .8;
+    border-radius: 10px;
+    background: green;
+}
+
+.cloud:before,
+.cloud:after {
+    position: absolute;
+    top: -15px;
+    left: 10px;
+    
+    width: 100px;
+    height: 80px;
+    
+    content: '';
+    
+    border-radius: 30px;
+    background: red;
+}
+
+.cloud:after {
+    top: -55px;
+    right: 15px;
+    left: auto;
+    
+    width: 120px;
+    height: 110px;
+    background: yellow;
+}
