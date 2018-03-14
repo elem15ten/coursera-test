@@ -1,0 +1,130 @@
+ * {box-sizing: border-box;
+}
+body {
+                margin: 0;
+                padding: 0;}
+h1 {
+	text-align: center;
+	font-family: "arial", serif;
+	text-transform: uppercase;
+	text-decoration: underline;
+	color: orange;
+	text-shadow: green 3px 3px 3px;
+}
+h2 {
+	font-family: sans-serif;
+	font-style: italic;
+}
+
+section {
+
+	height: 700px;
+	padding: 50px;
+	
+	position: relative;
+
+	overflow: hidden;
+}
+.col-lg-3 {
+	width: 100%;
+	
+}
+.img {
+	position: relative;
+	width: 40%;
+	height: 400px;
+	float: left;
+	overflow: hidden;
+	
+	}
+
+img {	
+	position: absolute;
+	left: 0%;
+	right: 0%;
+	width: 100%;
+	height: auto;
+	
+	box-sizing: border-box;
+	transition: all;
+	transition-duration: 2s;
+	transition-timing-function: ease-in-out;
+	transform-origin: center;
+	float: left;
+	z-index: 0;
+}
+img:hover {
+	transform: scale(1.1,1.1);
+}
+
+
+.cont {
+	position: relative;
+	width: 50%;
+	float: right;
+	margin-left: 10%;
+}
+
+.rating {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  text-align: left;
+}
+.rating > span {
+  display: inline-block;
+  position: relative;
+  width: 1.3em;
+}
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+	color: yellow;
+	text-shadow: red 1px 1px 0, red -1px -1px 0, 
+                 red -1px 1px 0, red 1px -1px 0;
+   content: "\2605";
+   position: absolute;
+}
+a.stars1 {
+	unicode-bidi: bidi-override;
+  direction: rtl;
+  text-align: left;
+   display: inline-block;
+  position: relative;
+  width: 1.3em;
+}
+a.stars1 {
+	color: black;
+	}
+a.stars1:hover:before {
+   content: "\2605";
+   position: absolute;
+
+	color: yellow;
+	
+}
+.cont {
+	height: 350px;
+}
+p {
+	margin-right: 5pt;
+}
+
+/*@media (min-width: 950px) and (max-width: 1199px) {
+	.col-md-4 {
+		width: 33.33%
+
+	}
+}
+
+@media (max-width: 949px) {
+	.col-xs-12 {
+		width: 100%
+	}
+}*/
+.z {
+	text-decoration: line-through;
+	color: red;
+}
+ header {
+ 	text-align: right;
+ 	margin-right: 25px;
+ }
