@@ -1,9 +1,20 @@
+.flex {
+	
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+
 a {
-	font-family: arial;
-	font-size: 18pt;
+	font-family: sans-serif;
+	font-size: 24pt;
 	border: 2px solid #222222;
+	border-radius: 5px;
 	background: skyblue;
-	margin-left: 10px;
+	margin: 15px 10px 15px 10px;
 	padding: 3px 5px;
 	text-decoration: none;
 	box-shadow: red 5px 5px 0;
@@ -14,12 +25,22 @@ div {
 	transition: all 1s ease 0s;
 	position: relative;
 	float: left;
+	transition: all 1s ease 0s
 }
 div a:hover  {
 	
 	background-color: yellow; 
 	box-shadow: red 0px 0px 0;
 	}
+div a:active {
+	background-color: #8B008B;
+}
+div:active {
+
+	transform: scale(2, 2);
+	transform: rotate(33deg);
+}
+
 div:hover  {
 	transform: rotateX(45deg);
 	transform: translate(5px, 5px);
@@ -27,7 +48,5 @@ div:hover  {
 }
 h1 {
 	text-align: center;
-}
-section {
-	display: inline-block;
+	font-size: 3em;
 }

@@ -1,0 +1,211 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	background-color: #dddddd;
+}
+
+h1 {
+	font-family: sans-serif;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+p {
+	font-family: sans-serif;
+}
+img {
+	max-height: 200px;
+	 margin: 10px 20px 10px 20px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.main-and-sidebar-wrapper {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-between;
+}
+.leftbar {
+	background: #bbbbbb;
+	flex: 1;
+	padding-top: -10px;
+}
+.leftbar {
+	display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.leftbar p{
+	border-bottom: solid 1px #000;
+	padding: 5px 10px 10px;
+	margin: 1px 1px 1px;
+	}
+.leftbar p:hover {
+	background: #aaaaaa;
+}
+.leftbar p:nth-child(2){
+	background: #999999;
+}
+.main {
+flex: 4;
+display: flex;
+flex-flow: row;
+flex-wrap: wrap;
+align-content: center;
+align-items: center;
+justify-content: center;
+}
+
+.thumbs {
+	
+	overflow: hidden;
+	position: relative;
+	
+}
+
+.info {
+	position: absolute;
+	bottom: 30px;
+	left: 20px;
+	z-index: 10;
+	color: #ffffff;
+	background: #999999;
+	font-family: sans-serif;
+	opacity: 0;
+}
+
+.thumbs:hover .info	{
+	transition-duration: 0.5s;
+	opacity: 0.7;
+
+
+}
+
+
+.sidebar {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.sidebar > div > p {
+	padding-right: 10px
+}
+.rating {
+	color: red;
+	font-size: 1.2em;
+	margin-top: 0;
+}
+.sidebar p {
+	
+	padding: 15px 0;
+	margin-bottom: -15px;
+	text-align: right;
+}
+.sidebar div {
+	background: #bbbbbb;
+	padding-right: 10px;
+	margin-bottom: 25px;
+	display: flex;
+  	flex-direction: column;
+  	justify-content: flex-start;
+  	align-items: flex-end;
+
+}
+.ret {
+	
+	margin-bottom: -15px;
+	text-align: right;
+	font-family: sans-serif;
+	font-size: 0.7em;
+	vertical-align: super;
+	font-family: sans-serif;
+
+}
+.right {
+	text-align: right;
+}
+.siam {
+	order: 0;
+	transition: all;
+	transition-duration: 0.5s;
+}
+
+.posit:checked ~ .siam {
+	order: 1;
+	
+}
+
+.grad {
+	
+
+	height: auto;
+	margin: 3px;
+	
+}
+
+
+footer {
+	border-top: solid 1px #000; 
+	background-color: #eeeeee;
+	position: fixed;
+	bottom: 0;
+	opacity: 0.7;
+	width: 98%;
+	max-height: 10%;
+	
+}
+.footer {
+	display: flex;
+	justify-content: space-between;
+}
+
+
+@media (max-width: 786px) {
+	.container {
+  display: flex;
+  flex-direction: row;
+}
+.main-and-sidebar-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.leftbar {
+	display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+}
+.leftbar p {
+	text-align: center;
+}
+
+
+.sidebar div {
+	background: #bbbbbb;
+	padding-left:  10px;
+	margin-bottom: 25px;
+	display: flex;
+  	flex-flow: row;
+	flex-wrap: wrap;
+	align-content: flex-start;
+	justify-content: center;
+	align-items: center;
+  	
+
+}
+
+}
+.sidebar p {
+	
+	padding: 15px 10px;
+	
+	text-align: left;
+}
+#rating {
+	text-align: center;
+}
