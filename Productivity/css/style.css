@@ -745,6 +745,11 @@ h2 {
     width: calc(50vw + 48px);
     margin: -48px 0 2.5rem -48px;
     overflow: hidden; }
+    @media (max-width: 1399px) {
+      .section-quotes .slider-quotes-container {
+        width: calc(45vw + 48px);
+        margin: -48px 0 2.5rem -48px;
+        overflow: hidden; } }
     @media (max-width: 991px) {
       .section-quotes .slider-quotes-container {
         width: calc(80vw + 8px);
@@ -754,9 +759,14 @@ h2 {
     padding: 0;
     margin: 0;
     list-style: none;
-    display: flex; }
+    display: flex;
+    height: 18.75rem;
+    width: 25vw; }
+    @media (max-width: 575px) {
+      .section-quotes .slider-quotes {
+        height: 30rem; } }
     .section-quotes .slider-quotes__item {
-      min-width: 48vw;
+      min-width: 47vw;
       padding: 3rem;
       opacity: .5;
       transition: opacity 0.2s; }
@@ -764,7 +774,7 @@ h2 {
         opacity: 1; }
       @media (max-width: 1399px) {
         .section-quotes .slider-quotes__item {
-          min-width: 47vw; } }
+          min-width: 43vw; } }
       @media (max-width: 991px) {
         .section-quotes .slider-quotes__item {
           min-width: 68vw; } }
