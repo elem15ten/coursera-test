@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="landing page">
+    <title>ART_WALTER</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+<body>
+    <div class="container">
+        
+    </div>
+    <header class="section-header">
+        <h1 class="section-header-head">
+            Artist Vladiy Zart
+        </h1>
+        <div class="main-navigation" id="main-navigation">
+            <nav class="nav">
+                <ul class="nav-wrapper">
+                    <li class="nav-wrapper__item">
+                        <a href="#" class="nav-wrapper__item-link nav-wrapper__item-link--active">Работы на продажу</a>
+                    </li>
+                    <li class="nav-wrapper__item">
+                        <a href="#" class="nav-wrapper__item-link nav-wrapper__item-link--active">Галерея</a>
+                    </li>
+                    <li class="nav-wrapper__item">
+                        <a href="#" class="nav-wrapper__item-link nav-wrapper__item-link--active">О художнике</a>
+                    </li>
+                    <li class="nav-wrapper__item">
+                        <a href="#" class="nav-wrapper__item-link nav-wrapper__item-link--active">Оплата</a>
+                    </li>
+                    <li class="nav-wrapper__item">
+                        <a href="#" class="nav-wrapper__item-link nav-wrapper__item-link--active">Доставка</a>
+                    </li>
+                    <li class="nav-wrapper__item">
+                        <a href="#" class="nav-wrapper__item-link nav-wrapper__item-link--active">Статьи</a>
+                    </li>
+                    <li class="nav-wrapper__item">
+                        <a href="#" class="nav-wrapper__item-link nav-wrapper__item-link--active">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="section-picture swiper-container mySwiper">
+            <div class="swiper-wrapper">
+                <div class="section-picture-item swiper-slide">
+                    <img src="img/museum-min.jpg" alt="Музей">
+                </div>
+                <div class="section-picture-item swiper-slide">
+                    <img src="img/ekaterina-max.jpg" alt="Музей">
+                </div>
+                <div class="section-picture-item swiper-slide">
+                    <img src="img/forrest-way.jpg" alt="Музей">
+                </div>
+                <div class="section-picture-item swiper-slide">
+                    <img src="img/birch.jpg" alt="Музей">
+                </div>
+                <div class="section-picture-item swiper-slide">
+                    <img src="img/well.png" alt="Музей">
+                </div>
+            </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+        </section>
+
+    </main>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          effect: "coverflow",
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: "auto",
+          loop: true,
+          coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+  },
+        });
+      </script>
+
+</body>
+</html>
