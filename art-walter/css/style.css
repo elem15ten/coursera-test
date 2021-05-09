@@ -57,6 +57,7 @@ ul {
   text-align: center;
   transition: 0.3s;
   cursor: pointer;
+  white-space: nowrap;
 }
 
 @media (max-width: 575px){
