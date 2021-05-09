@@ -5,9 +5,7 @@
 body {
   font-family: 'Playfair Display', serif;    
   } 
-a {
-  text-decoration: none;
-}
+
 ul {
   list-style: none;
 }
@@ -55,9 +53,10 @@ ul {
   font-size: 1em;
   line-height: 1.5em;
   text-align: center;
-  transition: 0.3s;
+  transition: 0.5s;
   cursor: pointer;
   white-space: nowrap;
+  text-decoration: underline transparent;
 }
 
 @media (max-width: 575px){
@@ -69,10 +68,14 @@ ul {
 
 .nav-wrapper__item-link:hover {
   color: rgb(0, 10, 95);  
-  text-shadow: 0 0 1rem rgba(155, 5, 255, 0.6);   
+  text-shadow: 0 0 1rem rgba(155, 5, 255, 0.4);  
+  text-decoration: underline rgba(0, 10, 95, 0.6); 
 }
 main {
   position: relative;
+}
+h2 {
+  display: none;
 }
 .section-picture {
   display: flex;
