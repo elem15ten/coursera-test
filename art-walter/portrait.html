@@ -8,7 +8,9 @@
     <meta name="description" content="landing page">
     <title>ART_WALTER</title>
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+ 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+    
 </head>
 
 <body>
@@ -23,10 +25,13 @@
             <nav class="nav">
                 <ul class="nav-wrapper">
                     <li class="nav-wrapper__item">
-                        <a href="#" class="nav-wrapper__item-link nav-wrapper__item-link--active">Работы на продажу</a>
+                        <a href="index.html" class="nav-wrapper__item-link nav-wrapper__item-link--active">На главную</a>
                     </li>
                     <li class="nav-wrapper__item">
                         <a href="gallery.html" class="nav-wrapper__item-link nav-wrapper__item-link--active">Галерея</a>
+                    </li>
+                    <li class="nav-wrapper__item">
+                        <a href="#" class="nav-wrapper__item-link nav-wrapper__item-link--active">Работы на продажу</a>
                     </li>
                     <li class="nav-wrapper__item">
                         <a href="#" class="nav-wrapper__item-link nav-wrapper__item-link--active">О художнике</a>
@@ -49,31 +54,93 @@
     </header>
 
     <main>
-
-        <section class="section-picture swiper-container mySwiper">
-            <h2 class="hidden">Картины</h2>
-            <div class="swiper-wrapper">
-                <div class="section-picture-item swiper-slide">
-                    <img src="img/large/museum.jpg" alt="Музей">
-                </div>
-                <div class="section-picture-item swiper-slide">
+        <div class="gallery-wrapper">
+            <div class="picture"> 
+                <div>
                     <img src="img/large/ekaterina.jpg" alt="Екатерина">
                 </div>
-                <div class="section-picture-item swiper-slide">
-                    <img src="img/large/forrest-way.jpg" alt="Дорога в лесу">
+                <div class="picture-description">
+                    <h3 class="picture-description-header">
+                        ПОРТРЕТЫ
+                    </h2>
+                    <p class="picture-description-article">Описание работ</p>
                 </div>
-                <div class="section-picture-item swiper-slide">
-                    <img src="img/large/birch.jpg" alt="Березы">
-                </div>
-                <div class="section-picture-item swiper-slide">
-                    <img src="img/large/well.png" alt="Колодец">
-                </div>
-            </div>            
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-        </section>
-
-    </main>
+            </div>
+            <ul class="box-container gallery">
+                <li class="box">
+                    <div class="inner">
+                        <a href="img/large/museum.jpg" class="glightbox">
+                            <img src="img/small/museum.jpg" alt="image" class="preview"/>
+                        </a>                    
+                    </div>
+                </li>
+                <li class="box">
+                    <div class="inner">
+                        <a href="img/large/ekaterina.jpg" class="glightbox">
+                            <img src="img/small/ekaterina.jpg" alt="image" class="preview"/>
+                        </a>
+                    </div>
+                </li>
+                <li class="box">
+                    <div class="inner">
+                        <a href="img/large/birch.jpg" class="glightbox">
+                            <img src="img/small/birch.jpg" alt="image" class="preview"/>
+                        </a>
+                    </div>
+                </li>
+                <li class="box">
+                    <div class="inner">
+                        <a href="img/large/forrest-way.jpg" class="glightbox">
+                            <img src="img/small/forrest-way.jpg" alt="image" class="preview" />
+                        </a>
+                    </div>
+                </li>
+                <li class="box">
+                    <div class="inner">
+                        <a href="img/large/well.png" class="glightbox">
+                            <img src="img/small/well.png" alt="image" class="preview"/>
+                        </a>
+                    </div>
+                </li>
+                <li class="box">
+                    <div class="inner">
+                        <a href="img/large/museum.jpg" class="glightbox">
+                            <img src="img/small/museum.jpg" alt="image" class="preview"/>
+                        </a>                    
+                    </div>
+                </li>
+                <li class="box">
+                    <div class="inner">
+                        <a href="img/large/ekaterina.jpg" class="glightbox">
+                            <img src="img/small/ekaterina.jpg" alt="image" class="preview"/>
+                        </a>
+                    </div>
+                </li>
+                <li class="box">
+                    <div class="inner">
+                        <a href="img/large/birch.jpg" class="glightbox">
+                            <img src="img/small/birch.jpg" alt="image" class="preview"/>
+                        </a>
+                    </div>
+                </li>
+                <li class="box">
+                    <div class="inner">
+                        <a href="img/large/forrest-way.jpg" class="glightbox">
+                            <img src="img/small/forrest-way.jpg" alt="image" class="preview" />
+                        </a>
+                    </div>
+                </li>
+                <li class="box">
+                    <div class="inner">
+                        <a href="img/large/well.png" class="glightbox">
+                            <img src="img/small/well.png" alt="image" class="preview"/>
+                        </a>
+                    </div>
+                </li>
+                
+            </ul>   
+        </div>  
+      </main>
 
     <footer class="section-footer">
         <div class="socials">
@@ -107,8 +174,53 @@
         </div>
     </footer>
 
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="js/swiper.js"></script>    
+  
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+
+    <script>
+        var lightbox = GLightbox();
+        lightbox.on('open', (target) => {
+            console.log('lightbox opened');
+        });
+        var lightboxDescription = GLightbox({
+            selector: '.glightbox2'
+        });
+        var lightboxVideo = GLightbox({
+            selector: '.glightbox3'
+        });
+        lightboxVideo.on('slide_changed', ({ prev, current }) => {
+            console.log('Prev slide', prev);
+            console.log('Current slide', current);
+
+            const { slideIndex, slideNode, slideConfig, player } = current;
+
+            if (player) {
+                if (!player.ready) {
+                    // If player is not ready
+                    player.on('ready', (event) => {
+                        // Do something when video is ready
+                    });
+                }
+
+                player.on('play', (event) => {
+                    console.log('Started play');
+                });
+
+                player.on('volumechange', (event) => {
+                    console.log('Volume change');
+                });
+
+                player.on('ended', (event) => {
+                    console.log('Video ended');
+                });
+            }
+        });
+
+        var lightboxInlineIframe = GLightbox({
+            selector: '.glightbox4'
+        });
+
+    </script>
 
 </body>
 
