@@ -9,6 +9,9 @@ body {
 ul {
   list-style: none;
 }
+a {
+  text-decoration: none;
+}
 .container {
  position: fixed;
  width: 100%;
@@ -74,7 +77,7 @@ ul {
 main {
   position: relative;
 }
-h2 {
+.hidden{
   display: none;
 }
 .section-picture {
@@ -119,6 +122,148 @@ color: teal;
 }
 @media (max-width: 575px) {
   div.swiper-button-prev, div.swiper-button-next{
+    display: none;
+  }
+}
+
+.gallery-wrapper {
+  margin: 0 auto;
+  max-width: 1200px;
+  
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.gallery-wrapper-styles {
+  margin: 0 auto;
+  max-width: 1200px;
+  
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+@media (max-width: 575px) {
+  .gallery-wrapper-styles {
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.picture {
+ 
+  margin-top: 1em;
+  margin-left: 4em;
+}
+.picture-right{ 
+  margin-top: 1em;
+  margin-right: 4em;
+}
+@media (max-width: 575px) {
+  .picture-right {
+    margin-right: 0;
+  }
+}
+
+.picture img, .picture-right img {
+  max-width: 250px; 
+  margin-left: 2em;
+}
+
+@media (max-width: 575px) {
+  .picture img {
+    max-width: 170px;
+    margin-left: 0;
+  }
+}
+@media (max-width: 575px) {
+  .picture-right img {
+    max-width: 150px;
+    margin-left: 0;
+  }
+}
+
+.picture-description {
+  height: 3em;
+  margin-left: 40px;
+  
+}
+@media (max-width: 575px) {
+  .picture-description {
+    margin-left: 0;
+  }
+}
+
+.picture-description-header {  
+  font-size: 2em;
+}
+.picture-description-article {
+  font-size: 1.5em;
+}
+
+.picture-styles {
+  text-align: center;
+  color: black; 
+  margin-top: 0;
+  margin-bottom: 1em;
+  text-align: center;
+  transition: 0.5s;
+  cursor: pointer;  
+  text-decoration: underline transparent;
+}
+
+.picture-styles:hover {
+  color: rgb(0, 10, 95);  
+  text-shadow: 0 0 1rem rgba(155, 5, 255, 0.4);  
+  text-decoration: underline rgba(0, 10, 95, 0.6); 
+}
+
+.gallery {
+  
+  display: flex;
+  flex-wrap: wrap;
+	justify-content: center;
+	align-items: flex-start;
+	align-content: space-around;
+  margin-top: 0;
+  padding-left: 0;
+  
+}
+.preview {
+  height: 150px;
+  width: auto;
+  margin: 20px 40px 10px 0;
+}
+
+.art-styles {
+  height: 250px;
+  width: auto;
+  margin: 20px;
+}
+
+.empty {
+  height: 100px;
+}
+@media (min-width: 575px) {
+  .empty {
+    height: 0;
+  }
+}
+
+hr {
+  height: 3px;
+  width: 100%;
+}
+
+@media (min-width: 575px) {
+  hr {
     display: none;
   }
 }
