@@ -1,3 +1,3 @@
 # coursera-test
-coursera test rpository
-These are educational projects for learning JS, HTML, CSS.
+
+These are educational projects for learning JS, HTML, CSS, SCSS, Gulp, Grid, Flex...
